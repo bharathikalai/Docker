@@ -1,0 +1,23 @@
+FROM node:14
+LABEL maintainer="bharathi@gmail.com"
+
+ENV NODE_ENV=production
+
+WORKDIR /app
+
+COPY package*.json ./
+
+ADD local-file.tar.gz /app
+ADD http://example/file   /app/file
+
+VOLUME [ "/data" ]
+
+RUN npm install 
+
+COPY . .
+
+EXPOSE 8080
+
+ENTRYPOINT ["node"]
+
+CMD ["node","app.js"]
