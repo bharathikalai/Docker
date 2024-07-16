@@ -5,9 +5,9 @@
 ### containers are light wight .
 
 ### why containers are light wight ?
-####   1. shared os kernel  
-####   2. fast startup times 
-####   3. the layered file system
+  ####   1. shared os kernel  
+  ####   2. fast startup times 
+  ####   3. the layered file system
 
 
 # Docker architecture 
