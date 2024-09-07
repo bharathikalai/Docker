@@ -1,3 +1,3 @@
-# Docker architecture
+# Docker architecture:
 
 ![alt text](image.png)
