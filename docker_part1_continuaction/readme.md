@@ -1,6 +1,5 @@
 # Docker part 1 continuation
-![alt text](../docker_intro/image.png)
-
+![alt text](image.png)
 
 
 # Docker Cli
