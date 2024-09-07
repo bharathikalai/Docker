@@ -16,8 +16,8 @@ The Docker Daemon exposes a REST API that can be used to interact with it progra
 
 # HOw to install docker in ubuntu
 
-/// sudo apt update
+``` sudo apt update
 sudo apt install docker.io
 sudo systemctl status docker
-///
+```
 
