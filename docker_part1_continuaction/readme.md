@@ -1,7 +1,7 @@
 # Docker part 1 continuation
 ![alt text](image.png)
 
-
+.
 # Docker Cli
 
 The Docker CLI (Command-Line Interface) is a tool used to interact with Docker. It allows you to manage Docker containers, images, networks, and volumes through a command-line interface.
