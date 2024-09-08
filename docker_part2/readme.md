@@ -28,7 +28,7 @@ sudo docker run python-helloworld:latest
 
 _The FROM instruction specifies the base image (e.g., python:3.9-slim), which could be an operating system or language runtime (like Python)_
 ---
-# Layered Filesystem
+## Layered Filesystem
 
 ## Layered file system is a union file system
 
