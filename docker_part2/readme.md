@@ -30,9 +30,9 @@ sudo docker run python-helloworld:latest
 
 ## Layered file system is a union file system
 
-### FROM: Creates the first layer (the base image).
-### COPY: Adds files to the image, creating another layer.
-### RUN: Executes commands in the image and creates another layer.
+1. FROM: Creates the first layer (the base image).
+2. COPY: Adds files to the image, creating another layer.
+3. RUN: Executes commands in the image and creates another layer.
 
 ## These layers are cached so that if the build process is repeated and nothing has changed in the Dockerfile, Docker can reuse the cached layers. This speeds up future builds.
 
