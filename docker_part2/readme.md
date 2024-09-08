@@ -47,3 +47,31 @@ _These layers are cached so that if the build process is repeated and nothing ha
 _Docker stores the resulting image in its local image repository (stored on your machine, typically under /var/lib/docker)._
 _The image is immutable, meaning it cannot be modified. Any changes to it would result in a new layer._
 ***
+
+
+
+*** Limiting CPU and RAM for Docker Containers  ***
+
+## CPU Limit
+```
+sudo docker run --cpu-shares 512 python-helloworld:latest
+```
+
+## CPU Quota and Period
+
+```
+sudo docker run --cpu-quota=50000 --cpu-period=100000 python-helloworld:latest
+```
+
+## CPU Limit
+```
+sudo docker run --cpus="1.5" python-helloworld:latest
+```
+
+
+> RAM Limit
+
+```
+sudo docker run --memory="512m" --memory-swap="1g" python-helloworld:latest
+
+```
