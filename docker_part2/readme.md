@@ -39,6 +39,6 @@ sudo docker run python-helloworld:latest
 ![alt text](image.png)
 
 ### Storing the Image
-#### Docker stores the resulting image in its local image repository (stored on your machine, typically under /var/lib/docker).
-#### The image is immutable, meaning it cannot be modified. Any changes to it would result in a new layer.
+1. Docker stores the resulting image in its local image repository (stored on your machine, typically under /var/lib/docker).
+2. The image is immutable, meaning it cannot be modified. Any changes to it would result in a new layer.
 ***
