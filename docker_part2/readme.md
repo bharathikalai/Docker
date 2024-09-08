@@ -1,4 +1,4 @@
-_What is docker image and how to create a docker file & docker containor_
+<h1> What is docker image and how to create a docker file & docker containor </h1>
 
 ```
 FROM python:3.8-slim
@@ -23,7 +23,7 @@ sudo docker run python-helloworld:latest
 
 ## Baseimage retrieval
 
-### The FROM instruction specifies the base image (e.g., python:3.9-slim), which could be an operating system or language runtime (like Python)
+_The FROM instruction specifies the base image (e.g., python:3.9-slim), which could be an operating system or language runtime (like Python)_
 ---
 # Layered Filesystem
 
@@ -39,6 +39,6 @@ sudo docker run python-helloworld:latest
 ![alt text](image.png)
 
 ### Storing the Image
-1. Docker stores the resulting image in its local image repository (stored on your machine, typically under /var/lib/docker).
-2. The image is immutable, meaning it cannot be modified. Any changes to it would result in a new layer.
+_Docker stores the resulting image in its local image repository (stored on your machine, typically under /var/lib/docker)._
+_The image is immutable, meaning it cannot be modified. Any changes to it would result in a new layer._
 ***
