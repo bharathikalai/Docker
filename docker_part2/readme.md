@@ -20,7 +20,7 @@ sudo docker run python-helloworld:latest
 
 ```
 
-# Docker file explaination
+## Docker file explaination
 
 ## Baseimage retrieval
 
