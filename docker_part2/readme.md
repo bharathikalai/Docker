@@ -77,7 +77,7 @@ sudo docker run --memory="512m" --memory-swap="1g" python-helloworld:latest
 ```
 ---
 
-___Docker Commands__
+___Docker Commands___
 
 ```
 sudo docker ps
