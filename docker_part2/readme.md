@@ -76,3 +76,12 @@ sudo docker run --memory="512m" --memory-swap="1g" python-helloworld:latest
 
 ```
 ---
+
+___Docker Commands__
+
+```
+sudo docker ps
+sudo docker images
+sudo docker stats
+```
+---
