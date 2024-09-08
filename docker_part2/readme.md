@@ -1,4 +1,4 @@
-<h1> What is docker image and how to create a docker file & docker containor <h1>
+<h1> What is docker image and how to create a docker file & docker containor </h1>
 
 ```
 FROM python:3.8-slim
