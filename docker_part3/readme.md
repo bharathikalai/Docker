@@ -52,3 +52,44 @@ sudo docker images
 sudo docker stats
 ```
 ---
+
+
+## Create a docker file and build the image and up the docker containor
+
+```
+mkdir ubuntu-apache
+cd ubuntu-apache
+echo "<html><body><h1>Hello from Apache2 on Docker!</h1></body></html>" > index.html
+touch Dockerfile
+```
+
+## Docker file
+
+```
+# Use the official Ubuntu base image
+FROM ubuntu:latest
+
+# Update and install Apache2
+RUN apt update && apt install -y apache2
+
+# Copy the HTML file to the default Apache directory
+COPY index.html /var/www/html/index.html
+
+# Expose port 80 for the web server
+EXPOSE 80
+
+# Start Apache2 in the foreground
+CMD ["apachectl", "-D", "FOREGROUND"]
+```
+
+## Build the Docker image:
+```
+docker build -t ubuntu-apache-image .
+
+```
+## Run the Docker container:
+
+```
+docker run -d -p 8080:80 ubuntu-apache-image
+```
+
