@@ -1,6 +1,6 @@
 *** A Docker container is a lightweight, portable, and self-contained unit of software that packages an application and its dependencies. Here's a simple explanation: ***
 
-_Key Points:_
+## Key Points:
             _Isolated Environment: Containers run in isolation from other containers and the host system, meaning they don't interfere with each other._
 
             _Runs Anywhere: Since containers include all the necessary code, libraries, and settings, they can run on any system that supports Docker, making them very portable._
