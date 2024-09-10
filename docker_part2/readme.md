@@ -50,38 +50,3 @@ _The image is immutable, meaning it cannot be modified. Any changes to it would 
 
 
 
-***Limiting CPU and RAM for Docker Containers***
-
-___CPU Limit___
-```
-sudo docker run --cpu-shares 512 python-helloworld:latest
-```
-
-___CPU Quota and Period___
-
-```
-sudo docker run --cpu-quota=50000 --cpu-period=100000 python-helloworld:latest
-```
-
-___CPU Limit___
-```
-sudo docker run --cpus="1.5" python-helloworld:latest
-```
----
-
-___RAM Limit___
-
-```
-sudo docker run --memory="512m" --memory-swap="1g" python-helloworld:latest
-
-```
----
-
-___Docker Commands___
-
-```
-sudo docker ps
-sudo docker images
-sudo docker stats
-```
----
