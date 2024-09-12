@@ -54,7 +54,7 @@ docker ps -a
 ```
 
 
-## Create a New Container and Run It
+## Create a New Container and Run It  -d detached mode
 
 ```
 docker run -d --name <container_name> <image_name>
