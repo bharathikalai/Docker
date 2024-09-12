@@ -85,7 +85,7 @@ docker inspect <container_name_or_id>
 docker logs <container_name_or_id>
 ```
 
-##  View Real-Time Logs
+##  View Real-Time Logs  -f (follow)
 
 ```
 docker logs -f <container_name_or_id>
