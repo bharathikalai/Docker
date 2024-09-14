@@ -4,6 +4,12 @@ FROM httpd:latest
 # Copy the index.html file into the Apache server's default directory
 COPY html/index.html /usr/local/apache2/htdocs/
 
+STOPSIGNAL SIGTERM
+
+# Create a new user and switch to it
+RUN useradd -ms /bin/bash appuser
+USER appuser
+
 # Expose port 8080
 EXPOSE 8080
 
