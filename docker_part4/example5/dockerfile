@@ -1,0 +1,21 @@
+FROM ubuntu:latest
+
+
+WORKDIR /app
+
+ADD https://github.com/bharathikalai/Docker/blob/main/readme.md  /app/
+
+# Define build-time arguments
+ARG ENVIRONMENT=production
+ARG APP_VERSION=1.0
+
+LABEL version=${APP_VERSION} description="A simple Dockerfile example."
+
+# Set these values as environment variables inside the container
+ENV ENVIRONMENT=${ENVIRONMENT}
+ENV APP_VERSION=${APP_VERSION}
+
+# Do something based on the environment or version
+RUN if [ "$ENVIRONMENT" = "production" ]; then echo "Production build"; else echo "Development build"; fi
+
+# CMD ["cat", "/app/readme.md"]

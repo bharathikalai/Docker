@@ -1,0 +1,17 @@
+# Start with a base image for MySQL
+FROM mysql:latest
+
+# Set environment variables (like the root password for MySQL)
+ENV MYSQL_ROOT_PASSWORD=my-secret-pw
+
+# Create a VOLUME to persist MySQL data
+VOLUME /var/lib/mysql
+
+# Expose MySQL port to the host
+EXPOSE 3306
+
+
+ONBUILD RUN echo "i am testing the onbuild"
+
+# Default command to start MySQL server
+CMD ["mysqld"]

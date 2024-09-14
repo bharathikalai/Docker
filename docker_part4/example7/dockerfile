@@ -1,0 +1,12 @@
+# Use the official Apache image from the Docker Hub
+FROM httpd:latest
+
+# Copy the index.html file into the Apache server's default directory
+COPY html/index.html /usr/local/apache2/htdocs/
+
+# Expose port 8080
+EXPOSE 8080
+
+# Optionally, you can define a health check (optional)
+HEALTHCHECK --interval=10s --timeout=3s --retries=3 \
+  CMD curl --fail http://localhost:8080 || exit 1

@@ -1,0 +1,11 @@
+FROM python:3.9-slim
+
+ARG PACKAGE_NAME=pandas
+
+RUN pip install ${PACKAGE_NAME}
+
+WORKDIR /app
+
+COPY . .
+
+CMD [ "python","print.py" ]
