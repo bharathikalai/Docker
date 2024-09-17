@@ -1,0 +1,5 @@
+# Use an official Nginx image
+FROM nginx:latest
+
+# Copy the HTML content to the container (initial content, but volume will override it)
+COPY html /usr/share/nginx/html

@@ -1,0 +1,8 @@
+# Use an official Nginx image
+FROM nginx:latest
+
+# Define a volume (this will create an anonymous volume)
+VOLUME /usr/share/nginx/html
+
+# Copy content to the container (optional step)
+COPY html /usr/share/nginx/html

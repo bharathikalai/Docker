@@ -2,7 +2,7 @@
 FROM python:3.9-slim
 
 # Set environment variables using ENV for data customization
-ENV TEXT1="hai"
+ENV TEXT1="hello"
 ENV TEXT2="bharathi"
 ENV TEXT3="how"
 ENV TEXT4="are"

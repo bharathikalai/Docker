@@ -4,4 +4,5 @@ WORKDIR /app
 
 COPY . .
 
-CMD [ "python","print.py" ]
+ENTRYPOINT [ "python","print.py" ]
+
