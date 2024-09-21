@@ -8,7 +8,7 @@
 # Commands 
 
 ```
-docker network create my_bridge
+
 ```
 
 ```
