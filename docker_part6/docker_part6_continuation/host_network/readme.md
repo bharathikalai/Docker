@@ -46,3 +46,7 @@ docker run --name nginx-host --network host -d nginx
 ```
 
 
+```
+docker run --network host -v nginx_8001.conf:/etc/nginx/conf.d/default.conf -d --name nginx-8001 nginx
+
+```
