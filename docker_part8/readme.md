@@ -43,7 +43,7 @@ docker push <dockerhub-username>/<repository>:<tag>
 {
 	"auths": {
 		"https://index.docker.io/v1/": {
-			"auth": "sdfghjfcvkljfdsgfkj"
+			"auth": "sssgfgfgsfgfsf"
 		}
 	}
 }

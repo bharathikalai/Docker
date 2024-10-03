@@ -1,0 +1,9 @@
+FROM python:3.8-slim
+
+WORKDIR /rajani
+
+COPY . .
+
+RUN pip install flask
+
+CMD [ "python","app.py" ] 

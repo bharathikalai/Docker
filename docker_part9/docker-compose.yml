@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web:
+    image: nginx:alpine
+    container_name: my_nginx_container  # Set the container name
+    ports:
+      - "8089:80"  # Map port 80 in the container to port 8089 on the host
+    restart: always  # Restart policy to always restart the container
