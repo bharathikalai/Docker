@@ -1,0 +1,28 @@
+version: '3'
+services:
+  app1:
+    build:
+      context: .
+      dockerfile: Dockerfile.app1
+    container_name: app1
+    volumes:
+      - shared-data:/usr/src/app/shared
+    networks:
+      - app-network
+
+  app2:
+    build:
+      context: .
+      dockerfile: Dockerfile.app2
+    container_name: app2
+    volumes:
+      - shared-data:/usr/src/app/shared
+    networks:
+      - app-network
+
+volumes:
+  shared-data:
+
+networks:
+  app-network:
+    driver: bridge
