@@ -25,3 +25,35 @@ Show arrows from the service definition to the worker nodes, where containers (r
 Draw an overlay network connecting both the manager and worker nodes, indicating communication between them.
 
 ```
+
+
+# command ubuntu conatinor
+
+```
+docker run --privileged -d --name dind-container-1 docker:dind
+
+
+docker run --privileged -d --name dind-container-2 docker:dind
+
+```
+
+
+# docker swarm init command
+
+```
+sudo docker swarm init --advertise-addr 192.168.0.127
+```
+
+# docker swarm commands
+
+```
+docker swarm leave
+docker swarm inspect
+```
+
+# create our first service 
+
+```
+sudo docker service create --replicas 2 -p 80:80 --name web1 httpd
+
+```
