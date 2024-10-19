@@ -30,7 +30,7 @@ Draw an overlay network connecting both the manager and worker nodes, indicating
 # command ubuntu conatinor
 
 ```
-docker run --privileged -d --name dind-container-1 docker:dind
+docker run --privileged -d --name dind-container-1 docker:dind  
 
 
 docker run --privileged -d --name dind-container-2 docker:dind
