@@ -1,0 +1,16 @@
+# Use the official PostgreSQL image as a base
+FROM postgres:latest
+
+# Set environment variables (optional)
+ENV POSTGRES_USER=myuser
+ENV POSTGRES_PASSWORD=mypassword
+ENV POSTGRES_DB=mydatabase
+
+# Declare the volume
+VOLUME ["/var/lib/postgresql/data"]
+
+
+docker run -d \
+  --name my_postgres_container \
+  -v pgdata:/var/lib/postgresql/data \
+  my_postgres_image
