@@ -1,0 +1,34 @@
+# Stage 1: Builder stage
+FROM node:16 AS builder
+
+# Set the working directory
+WORKDIR /app
+
+# Copy package files and install dependencies
+COPY package*.json ./
+RUN npm install
+
+# Copy the entire application source (including dev files)
+COPY . .
+
+# Build the application (this assumes you have a build command defined)
+RUN npm run build  # This step creates production-ready files in a 'dist' folder
+
+# Stage 2: Production stage
+FROM node:16-alpine  
+
+# Set the working directory
+WORKDIR /app
+
+# Only copy necessary files from the builder stage
+COPY --from=builder /app/dist ./dist  
+COPY --from=builder /app/package*.json ./  
+
+# Install only production dependencies
+RUN npm install --only=production
+
+# Expose the port the app runs on
+EXPOSE 3000
+
+# Command to run the application
+CMD ["npm", "start"]
